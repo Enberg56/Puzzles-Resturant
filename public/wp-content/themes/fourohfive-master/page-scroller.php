@@ -4,7 +4,9 @@
  */
 get_header(); ?>
 <main>
-	<?php the_field('map') ?>
+	<div class="mid">
+		<?php the_field('map') ?>
+	</div>
 <?php 
 // parent loop
 if( have_rows('menu_types') ):

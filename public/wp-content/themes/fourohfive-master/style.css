@@ -450,6 +450,7 @@ template {
 
 body, html {
   font-family: "Inconsolata", sans-serif;
+  font-size: 18px;
 }
 
 .img-fluid {
@@ -547,6 +548,13 @@ body, html {
 /* fixes potential theme css conflict */
 .acf-map img {
   max-width: inherit !important;
+}
+
+.mid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 html {
