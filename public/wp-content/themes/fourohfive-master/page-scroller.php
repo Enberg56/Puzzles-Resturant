@@ -23,7 +23,7 @@ if( have_rows('menu_types') ):
 				<ul>
 			    <?php while( have_rows('lunch') ) : the_row(); ?>				
 					<li><b><?php the_sub_field('lname'); ?></b>
-					 <?php the_sub_field('ldescription'); ?>
+					 <?php the_sub_field('ldesctiption'); ?>
 					 <?php the_sub_field('lprice'); ?></li>			
 				<?php endwhile; ?>				
 				</ul>			
