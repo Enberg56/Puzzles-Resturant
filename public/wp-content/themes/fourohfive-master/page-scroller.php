@@ -2,15 +2,10 @@
 /**
  * Template Name: Scroller
  */
-
 get_header(); ?>
-
 <main>
-
 	<?php the_field('map') ?>
-	
 <?php 
-
 // parent loop
 if( have_rows('menu_types') ):
     while( have_rows('menu_types') ) : the_row();    
@@ -77,7 +72,7 @@ endif;
 		/* Get content-page.php */ ?>
 	
 		<?php
-		get_template_part( 'template-parts/content', 'scroller' );
+		get_template_part( 'template-parts/content-scroller', 'scroller' );
 
 		
 
@@ -88,8 +83,7 @@ endif;
 
 	endwhile;
 	?>
-
+<p><?php the_field('our_story') ?></p>
 </main>
-
 <?php
 get_footer();
