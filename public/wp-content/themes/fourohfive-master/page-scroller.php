@@ -85,7 +85,7 @@ endif;
 
 	endwhile;
 	?>
-<p><?php the_field('our_story') ?></p>
+<p class="mid p4"><?php the_field('our_story') ?></p>
 </main>
 <?php
 get_footer();

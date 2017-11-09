@@ -550,6 +550,10 @@ body, html {
   max-width: inherit !important;
 }
 
+.p4 {
+  padding: 10px;
+}
+
 .mid {
   display: -ms-flexbox;
   display: flex;

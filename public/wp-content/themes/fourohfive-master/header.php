@@ -47,19 +47,7 @@
 		endif; ?>
 
 		<nav id="global-nav" class="global-nav">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo 'Menu'; ?></button>
-			<?php
-				/**
-				 * This creates a menu area that we can edit via the dashboard.
-				 * It's where our global nav will appear.
-				 *
-				 * @link https://developer.wordpress.org/reference/functions/wp_nav_menu/
-				 */
-				wp_nav_menu( array(
-					'theme_location' => 'global-nav',
-					'menu_id'        => 'global-nav',
-				) );
-			?>
+			
 		</nav>
 	</header>
 
