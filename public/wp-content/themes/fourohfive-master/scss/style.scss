@@ -1,0 +1,30 @@
+/*!
+Theme Name: fourohfive
+Theme URI: http://underscores.me/
+Author: Pete Medina
+Author URI: https://petermedina.com
+Description: A super basic starter theme for CSUN Art 405 students.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: fourohfive
+Tags: custom-menu, featured-images
+*/
+
+@import 'variables';
+@import 'global';
+@import 'normalize'; // https://necolas.github.io/normalize.css/
+@import 'typography';
+@import 'media';
+@import 'header';
+@import 'navigation';
+@import 'homepage';
+@import 'posts';
+@import 'pages';
+@import 'sidebars';
+@import 'searches';
+@import 'archives';
+@import 'widgets';
+@import 'utilities';
+@import 'layouts';
+@import 'plugins';

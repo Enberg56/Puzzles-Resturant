@@ -1,0 +1,39 @@
+// Variables
+
+
+// Colors
+$gray-base:              #000;
+$gray-darker:            lighten($gray-base, 13.5%);
+$gray-dark:              lighten($gray-base, 20%);
+$gray:                   lighten($gray-base, 33.5%);
+$gray-light:             lighten($gray-base, 46.7%);
+$gray-lighter: 			 lighten($gray-base, 93.5%);
+
+$blue: #4b6a88;
+
+
+// Spacer
+//
+// Use these to create a consistent set of numbers for your
+// margins and paddings
+
+
+// Base
+$spacer: 8px;
+$spacer-y: 8px;
+$spacer-x: 8px;
+
+// Larg
+$spacer-15x: 12px;
+$spacer-15x-y: 12px;
+$spacer-15x-x: 12px;
+
+// Larger
+$spacer-2x: 16px;
+$spacer-2x-y: 16px;
+$spacer-2x-x: 16px;
+
+// Largest
+$spacer-3x: 32px;
+$spacer-3x-y: 32px;
+$spacer-3x-x: 32px;

@@ -1,0 +1,22 @@
+// Layout Styles
+
+// Display border-box by defailt
+// https://css-tricks.com/box-sizing/
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+// Containers
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 $spacer-15x-x;
+}
