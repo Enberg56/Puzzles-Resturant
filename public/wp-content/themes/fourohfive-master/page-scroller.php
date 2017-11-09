@@ -26,15 +26,50 @@ if( have_rows('menu_types') ):
 					 <?php the_sub_field('ldesctiption'); ?>
 					 <?php the_sub_field('lprice'); ?></li>			
 				<?php endwhile; ?>				
-				</ul>			
+				</ul>
+			<?php endif; 
+			// end first child loop ?>		
+				<?php 
+			// -----------------secound child loop
+			if( have_rows('dinner') ): ?>
+				<ul>
+			    <?php while( have_rows('dinner') ) : the_row(); ?>				
+					<li><b><?php the_sub_field('diname'); ?></b>
+					 <?php the_sub_field('didesctiption'); ?>
+					 <?php the_sub_field('diprice'); ?></li>
+				<?php endwhile; ?>		
+				</ul>
+			<?php endif; 
+			// --------------- end secound child loop ?>
+			<?php
+			// -----------------third child loop
+			if( have_rows('dessert') ): ?>
+				<ul>
+			    <?php while( have_rows('dessert') ) : the_row(); ?>				
+					<li><b><?php the_sub_field('dename'); ?></b>
+					 <?php the_sub_field('dedesctiption'); ?>
+					 <?php the_sub_field('deprice'); ?></li>
+				<?php endwhile; ?>		
+				</ul>
 			<?php endif;
-			// end child loop			
-			?>			
+			// --------------- end third child loop	?>
+						<?php
+			// -----------------fourth child loop
+			if( have_rows('drinks') ): ?>
+				<ul>
+			    <?php while( have_rows('drinks') ) : the_row(); ?>				
+					<li><b><?php the_sub_field('drname'); ?></b>
+					 <?php the_sub_field('drdesctiption'); ?>
+					 <?php the_sub_field('drprice'); ?></li>
+				<?php endwhile; ?>		
+				</ul>
+			<?php endif;
+			// --------------- end fourth child loop	?>
 		</div>
 		<?php		
     endwhile;
 endif;
-// end parent loop
+// end parent loop-------------------
 ?>
 
 	<?php
