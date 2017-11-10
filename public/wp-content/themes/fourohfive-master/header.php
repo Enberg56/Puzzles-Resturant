@@ -24,7 +24,7 @@
 			<ul>
 			  <li><a class="active" href="#top">Top</a></li>
 			  <li><a href="#resturants">Resturants/Reservations</a></li>
-			  <li><a href="#menu">Menu</a></li>
+			  <li><a href="#menu-nav">Menu</a></li>
 			  <li><a href="#about">About us</a></li>
 			</ul>
 		</nav>
