@@ -51,24 +51,21 @@ ul{
 .menu{
   display:flex;  
   flex-direction:column;
-  
   li{
     display:block;
     list-style-type:none;
     text-transform:uppercase;
-  }
-  
-  li a{
-    display:flex;
-    text-align:center;
-    text-decoration:none;
-    color:#777;
-    padding:1rem;
-  }
-  
-  li a:hover{
-    background:#777;
-    color:#fff;
+      a{
+        display:flex;
+        text-align:center;
+        text-decoration:none;
+        color:#777;
+        padding:1rem;
+          &:hover{
+            background:#777;
+            color:#fff;
+          }
+      }
   }
 } 
 
