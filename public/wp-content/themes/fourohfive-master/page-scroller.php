@@ -3,7 +3,7 @@
  * Template Name: Scroller
  */
 get_header(); ?>
-<main>
+<main class="container">
 	<div class="mid p4">
 		<?php the_field('map') ?>
 	</div>
@@ -13,10 +13,11 @@ if( have_rows('menu_types') ):
     while( have_rows('menu_types') ) : the_row();    
     	?>		
 		<div class="row">			
-			<h3><?php the_sub_field('Our menues'); ?></h3>
+			<h3>Our menues</h3>
 			<?php 				
 			// child loop
 			if( have_rows('lunch') ): ?>
+				<h3>Lunch</h3>
 				<ul>
 			    <?php while( have_rows('lunch') ) : the_row(); ?>				
 					<li><b><?php the_sub_field('lname'); ?></b>
@@ -29,6 +30,7 @@ if( have_rows('menu_types') ):
 				<?php 
 			// -----------------secound child loop
 			if( have_rows('dinner') ): ?>
+				<h3>Dinner</h3>
 				<ul>
 			    <?php while( have_rows('dinner') ) : the_row(); ?>				
 					<li><b><?php the_sub_field('diname'); ?></b>
@@ -41,6 +43,7 @@ if( have_rows('menu_types') ):
 			<?php
 			// -----------------third child loop
 			if( have_rows('dessert') ): ?>
+				<h3>Dinner</h3>
 				<ul>
 			    <?php while( have_rows('dessert') ) : the_row(); ?>				
 					<li><b><?php the_sub_field('dename'); ?></b>
@@ -53,8 +56,9 @@ if( have_rows('menu_types') ):
 						<?php
 			// -----------------fourth child loop
 			if( have_rows('drinks') ): ?>
+				<h3>Drinks</h3>
 				<ul>
-			    <?php while( have_rows('drinks') ) : the_row(); ?>				
+			    <?php while( have_rows('drinks') ) : the_row(); ?>			
 					<li><b><?php the_sub_field('drname'); ?></b>
 					 <?php the_sub_field('drdesctiption'); ?>
 					 <?php the_sub_field('drprice'); ?></li>
