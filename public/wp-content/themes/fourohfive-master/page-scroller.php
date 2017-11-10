@@ -18,14 +18,15 @@ if( have_rows('menu_types') ):
 			// child loop
 			if( have_rows('lunch') ): ?>
 				<ul class="menu">
-					<li class="menu-dropdown"><a href="#">Lunch</a></li>
-					<ul class="sub-menu">
-				    <?php while( have_rows('lunch') ) : the_row(); ?>				
-						<li><a href="#"><?php the_sub_field('lname'); ?>
-						 <?php the_sub_field('ldesctiption'); ?>
-						 <?php the_sub_field('lprice'); ?></a></li>			
-					<?php endwhile; ?>				
-					</ul>
+					<li class="menu-dropdown"><a href="#">Lunch</a>
+						<ul class="sub-menu">
+					    <?php while( have_rows('lunch') ) : the_row(); ?>				
+							<li><a href="#"><?php the_sub_field('lname'); ?>
+							 <?php the_sub_field('ldesctiption'); ?>
+							 <?php the_sub_field('lprice'); ?></a></li>			
+						<?php endwhile; ?>				
+						</ul>
+					</li>
 			<?php endif; 
 			// end first child loop ?>		
 				<?php 
