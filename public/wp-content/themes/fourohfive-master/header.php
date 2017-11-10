@@ -19,39 +19,13 @@
 </head>
 
 <body class="sticky-footer">
-
-	<a class="sr-only" href="#content"><?php echo 'Skip to content'; ?></a>
-
 	<header id="masthead">
-
-		<?php
-
-		/* This theme supports custom logos — see functions.php — so we load the logo here. */
-		the_custom_logo();
-
-		/**
-		 * Check if we're on the homepage.
-		 *
-		 * If we're home, then display the site title with an <h1>, otherwise, display it with a <p>
-		 * so we can use the <h1> for the post or page title.
-		 */
-		if ( is_front_page() && is_home() ) : ?>
-			<h1>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-			</h1>
-		<?php else : ?>
-			<p>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-			</p>
-		<?php
-		endif; ?>
-
 		<nav id="global-nav" class="global-nav">
 			<ul>
-			  <li style="float:left"><a class="active" href="#home">Home</a></li>
+			  <li><a class="active" href="#top">Top</a></li>
 			  <li><a href="#resturants">Resturants/Reservations</a></li>
 			  <li><a href="#menu">Menu</a></li>
-			  <li><a href="#about">About</a></li>
+			  <li><a href="#about">About us</a></li>
 			</ul>
 		</nav>
 	</header>
