@@ -22,7 +22,7 @@
 	<header id="masthead">
 		<nav id="global-nav" class="global-nav">
 			<ul>
-			  <li><a class="active" href="#top">Top</a></li>
+			  <li><a href="#top">Top</a></li>
 			  <li><a href="#resturants">Resturants/Reservations</a></li>
 			  <li><a href="#menu-nav">Menu</a></li>
 			  <li><a href="#about">About us</a></li>

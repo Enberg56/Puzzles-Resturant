@@ -484,9 +484,6 @@ body, html {
   margin-right: auto;
   border-left: 1px solid white;
 }
-.global-nav ul li:last-child {
-  border-right: none;
-}
 
 .global-nav a {
   text-decoration: none;
