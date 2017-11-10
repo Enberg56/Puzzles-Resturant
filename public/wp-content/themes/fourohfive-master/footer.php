@@ -15,8 +15,7 @@
 
 			<footer class="container">
 				<p>Copyright &copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>. All rights reserved. </p>
-				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClOyBv3G6udf76f7nDpDGF359e0Ivak9Q"></script>
-				<script type="text/javascript">
+				<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyClOyBv3G6udf76f7nDpDGF359e0Ivak9Q'></script>
 
 			</footer>
 		
