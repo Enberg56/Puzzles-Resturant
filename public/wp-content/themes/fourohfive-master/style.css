@@ -500,6 +500,7 @@ body, html {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   margin: 2em;
+  background: #555555;
 }
 
 ul {
@@ -523,12 +524,11 @@ ul {
   display: flex;
   text-align: center;
   text-decoration: none;
-  color: #777;
+  color: white;
   padding: 1rem;
 }
 .menu li a:hover {
-  background: #777;
-  color: #fff;
+  background: #222222;
 }
 
 @media (min-width: 800px) {

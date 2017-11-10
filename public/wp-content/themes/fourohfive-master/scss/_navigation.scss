@@ -41,6 +41,7 @@
   border-top:1px solid #ddd;
   border-bottom:1px solid #ddd;
   margin:2em;
+  background: $gray;
 }
 
 ul{
@@ -59,11 +60,10 @@ ul{
         display:flex;
         text-align:center;
         text-decoration:none;
-        color:#777;
+        color:white;
         padding:1rem;
           &:hover{
-            background:#777;
-            color:#fff;
+            background: $gray-darker;
           }
       }
   }
