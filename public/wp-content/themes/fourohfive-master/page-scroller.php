@@ -29,6 +29,7 @@ if( have_rows('menu_types') ):
 			// child loop
 			if( have_rows('lunch') ): ?>
 				<ul class="menu">
+<<<<<<< HEAD
 					<li class="menu-dropdown"><a href="#">Lunch</a>
 						<ul class="sub-menu">
 					    <?php while( have_rows('lunch') ) : the_row(); ?>				
@@ -39,6 +40,18 @@ if( have_rows('menu_types') ):
 						</ul>
 					</li>
 			<?php endif; // end first child loop ?>		
+=======
+					<li class="menu-dropdown"><a href="#">Lunch</a></li>
+					<ul class="sub-menu">
+				    <?php while( have_rows('lunch') ) : the_row(); ?>				
+						<li><a href="#"><?php the_sub_field('lname'); ?>
+						 <?php the_sub_field('ldesctiption'); ?>
+						 <?php the_sub_field('lprice'); ?></a></li>			
+					<?php endwhile; ?>				
+					</ul>
+			<?php endif; 
+			// end first child loop ?>		
+>>>>>>> parent of 1f92e5b... it fucking worked!!!
 				<?php 
 			// -----------------secound child loop
 			if( have_rows('dinner') ): ?>
