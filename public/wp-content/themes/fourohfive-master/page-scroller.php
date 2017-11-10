@@ -5,7 +5,18 @@
 get_header(); ?>
 <main class="container">
 	<div class="mid p4" id="resturants">
-		<?php the_field('map') ?>
+
+		<?php //-------------start map
+
+$location = get_field('map');
+
+if( !empty($location) ):
+?>
+<div class="acf-map">
+	<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+</div>
+<?php endif;//--------------- end map ?>
+
 	</div>
 			<h3 class="mid">Our menues</h3>
 <?php 
@@ -27,12 +38,11 @@ if( have_rows('menu_types') ):
 						<?php endwhile; ?>				
 						</ul>
 					</li>
-			<?php endif; 
-			// end first child loop ?>		
+			<?php endif; // end first child loop ?>		
 				<?php 
 			// -----------------secound child loop
 			if( have_rows('dinner') ): ?>
-				<li class="menu-dropdown"><a href="#">Dinner</a></li>
+				<li class="menu-dropdown"><a href="#">Dinner</a>
 					<ul class="sub-menu">
 				    <?php while( have_rows('dinner') ) : the_row(); ?>				
 						<li><a href="#"><?php the_sub_field('diname'); ?>
@@ -40,25 +50,27 @@ if( have_rows('menu_types') ):
 						 <?php the_sub_field('diprice'); ?></a></li>
 					<?php endwhile; ?>		
 					</ul>
+				</li>
 			<?php endif; 
 			// --------------- end secound child loop ?>
 			<?php
 			// -----------------third child loop
 			if( have_rows('dessert') ): ?>
-				<li class="menu-dropdown"><a href="#">Dessert</a></li>
+				<li class="menu-dropdown"><a href="#">Dessert</a>
 					<ul class="sub-menu">
 				    <?php while( have_rows('dessert') ) : the_row(); ?>				
 						<li><a href="#"><?php the_sub_field('dename'); ?>
 						 <?php the_sub_field('dedesctiption'); ?>
 						 <?php the_sub_field('deprice'); ?></a></li>
-					<?php endwhile; ?>		
+					<?php endwhile; ?>
 					</ul>
+				</li>
 			<?php endif;
 			// --------------- end third child loop	?>
 						<?php
 			// -----------------fourth child loop
 			if( have_rows('drinks') ): ?>
-				<li class="menu-dropdown"><a href="#">Drinks</a></li>
+				<li class="menu-dropdown"><a href="#">Drinks</a>
 					<ul>
 				    <?php while( have_rows('drinks') ) : the_row(); ?>			
 						<li><a href="#"><?php the_sub_field('drname'); ?>
@@ -66,6 +78,7 @@ if( have_rows('menu_types') ):
 						 <?php the_sub_field('drprice'); ?></a></li>
 					<?php endwhile; ?>		
 					</ul>
+				</li>
 			<?php endif;
 			// --------------- end fourth child loop	?>
 		</ul>
@@ -80,8 +93,8 @@ endif;
 	while ( have_posts() ) : the_post();
 		/* Get content-page.php */ ?>
 	
-		<?php
-		get_template_part( 'template-parts/content-scroller', 'scroller' );
+	<?php
+	get_template_part( 'template-parts/content-scroller', 'scroller' );
 
 		
 

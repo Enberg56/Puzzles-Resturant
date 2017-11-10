@@ -16,7 +16,7 @@ if ( ! function_exists( 'fourohfive_setup' ) ) :
 	 */
 
 	function my_acf_init() {
-		acf_update_setting('google_api_key', 'AIzaSyB2qokCJmgcJZL8P3j1YMh7InhdLKmbNgs');
+		acf_update_setting('google_api_key', 'AIzaSyClOyBv3G6udf76f7nDpDGF359e0Ivak9Q');
 	}
 	add_action('acf/init', 'my_acf_init');
 

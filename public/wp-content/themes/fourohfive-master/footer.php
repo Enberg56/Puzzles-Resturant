@@ -15,8 +15,11 @@
 
 			<footer class="container">
 				<p>Copyright &copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>. All rights reserved. </p>
-			</footer>
+				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClOyBv3G6udf76f7nDpDGF359e0Ivak9Q"></script>
+				<script type="text/javascript">
 
+			</footer>
+		
 		<?php wp_footer(); ?>
 	</body>
 </html>
