@@ -5,9 +5,7 @@
 get_header(); ?>
 <main class="container">
 	<div class="mid p4" id="resturants">
-
 		<?php //-------------start map
-
 $location = get_field('map');
 
 if( !empty($location) ):
@@ -105,7 +103,7 @@ endif;
 
 	endwhile;
 	?>
-<p class="mid p2" id="about"><?php the_field('our_story') ?></p>
+<div class="mid p2" id="about"><?php the_field('our_story') ?></div>
 </main>
 <?php
 get_footer();

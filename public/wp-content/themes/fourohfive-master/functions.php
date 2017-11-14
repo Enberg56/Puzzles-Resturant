@@ -14,7 +14,7 @@ if ( ! function_exists( 'fourohfive_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-
+//maps
 	function my_acf_init() {
 		acf_update_setting('google_api_key', 'AIzaSyClOyBv3G6udf76f7nDpDGF359e0Ivak9Q');
 	}

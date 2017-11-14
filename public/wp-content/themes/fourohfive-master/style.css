@@ -672,6 +672,10 @@ nav ul li:hover > ul {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.p4 .p5 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 .mid {
   display: -ms-flexbox;
