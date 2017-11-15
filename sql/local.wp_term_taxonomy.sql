@@ -10,4 +10,5 @@ INSERT INTO `wp_term_taxonomy` VALUES
 (6,6,"category","",0,0),
 (7,7,"category","",0,0),
 (8,8,"category","",0,0),
-(9,9,"category","",0,0);
+(9,9,"category","",0,0),
+(10,10,"ml-slider","",0,1);

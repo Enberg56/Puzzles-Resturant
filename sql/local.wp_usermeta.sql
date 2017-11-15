@@ -16,7 +16,7 @@ INSERT INTO `wp_usermeta` VALUES
 (12,1,"wp_user_level","10"),
 (13,1,"dismissed_wp_pointers",""),
 (14,1,"show_welcome_panel","1"),
-(15,1,"session_tokens","a:2:{s:64:\"aeacfdfd814ee484355673f359591fdf129f348e2de8dd4c6653df8c7f5493c9\";a:4:{s:10:\"expiration\";i:1510253588;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:78:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0\";s:5:\"login\";i:1510080788;}s:64:\"46dae7eada7e35545a08f3e91a0abc9e976880ba7e93afd8cce3637175e443c9\";a:4:{s:10:\"expiration\";i:1510365095;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:78:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0\";s:5:\"login\";i:1510192295;}}"),
+(15,1,"session_tokens","a:1:{s:64:\"e35e4731101d9eec8e07282e68386423af79cb910a4ccbee8c7f498d149c64bd\";a:4:{s:10:\"expiration\";i:1510796108;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:78:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0\";s:5:\"login\";i:1510623308;}}"),
 (16,1,"wp_dashboard_quick_press_last_post_id","3"),
 (17,1,"community-events-location","a:1:{s:2:\"ip\";s:12:\"192.168.95.0\";}"),
 (18,1,"gform_recent_forms","a:1:{i:0;s:1:\"1\";}"),

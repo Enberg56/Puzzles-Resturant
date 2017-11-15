@@ -10,4 +10,5 @@ INSERT INTO `wp_terms` VALUES
 (6,"menude","menude",0),
 (7,"menudi","menudi",0),
 (8,"menub","menub",0),
-(9,"Contact us","contact-us",0);
+(9,"Contact us","contact-us",0),
+(10,"79","79",0);

@@ -3,27 +3,22 @@
  * Template Name: Scroller
  */
 get_header(); ?>
-<main class="container">
-	<div class="mid p4" id="resturants">
-		<?php //-------------start map
-$location = get_field('map');
+<div class="fillgnav"></div>
+<main>
 
-if( !empty($location) ):
-?>
-<div class="acf-map">
-	<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+<div>
+	<?php 
+    echo do_shortcode("[metaslider id=79]");
+	?>
 </div>
-<?php endif;//--------------- end map ?>
-
-	</div>
-			<h3 class="mid">Our menues</h3>
-<?php 
+			<h3 class="mid" id="menu-nav">Our menues</h3>
+<?php
 // parent loop
 if( have_rows('menu_types') ):
-    while( have_rows('menu_types') ) : the_row();    
-    	?>		
-		<nav class="main-navigation" id="menu-nav">			
-			<?php 				
+    while( have_rows('menu_types') ) : the_row();
+    	?>
+		<nav class="main-navigation">
+			<?php
 			// child loop
 			if( have_rows('lunch') ): ?>
 				<ul class="menu">
@@ -87,6 +82,18 @@ endif;
 // end parent loop-------------------
 ?>
 
+<div class="mid p2" id="about">
+	<?php 
+$image = get_field('crew_pic'); 
+$size = 'full'; // (thumbnail, medium, large, full or custom size)
+if( $image ) {
+	echo wp_get_attachment_image( $image, $size );
+}
+?>
+	<?php the_field('our_story') ?>
+</div>
+
+<div class="mid p4" id="resturants">
 	<?php
 	while ( have_posts() ) : the_post();
 		/* Get content-page.php */ ?>
@@ -103,7 +110,7 @@ endif;
 
 	endwhile;
 	?>
-<div class="mid p2" id="about"><?php the_field('our_story') ?></div>
+</div>
 </main>
 <?php
 get_footer();
