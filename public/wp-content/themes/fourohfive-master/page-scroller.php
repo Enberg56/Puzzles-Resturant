@@ -5,13 +5,12 @@
 get_header(); ?>
 <div class="fillgnav"></div>
 <main>
-
 <div>
 	<?php 
     echo do_shortcode("[metaslider id=79]");
 	?>
 </div>
-			<h3 class="mid" id="menu-nav">Our menues</h3>
+			<h3 class="mid tittle" id="menu-nav">Our menues</h3>
 <?php
 // parent loop
 if( have_rows('menu_types') ):
@@ -69,7 +68,7 @@ if( have_rows('menu_types') ):
 						<li><a href="#"><?php the_sub_field('drname'); ?>
 						 <?php the_sub_field('drdesctiption'); ?>
 						 <?php the_sub_field('drprice'); ?></a></li>
-					<?php endwhile; ?>		
+					<?php endwhile; ?>
 					</ul>
 				</li>
 			<?php endif;
@@ -82,14 +81,15 @@ endif;
 // end parent loop-------------------
 ?>
 
-<div class="mid p2" id="about">
-	<?php 
-$image = get_field('crew_pic'); 
-$size = 'full'; // (thumbnail, medium, large, full or custom size)
-if( $image ) {
-	echo wp_get_attachment_image( $image, $size );
-}
-?>
+<div class="p2 ps" id="about">
+	<h3 class="tittle">This is us</h3>
+	<div class="about">
+	<?php if( get_field('crew_pic') ): ?>
+
+	<img src="<?php the_field('crew_pic'); ?>" />
+
+<?php endif; ?>
+	</div>
 	<?php the_field('our_story') ?>
 </div>
 

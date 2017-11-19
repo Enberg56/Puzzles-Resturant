@@ -20,3 +20,14 @@ html {
     margin: 0 auto;
     padding: 0 $spacer-15x-x;
 }
+.tittle{
+    font-size: 2em;
+    text-align: center;
+}
+.about{
+  width: 100%;
+  text-align: center;
+  img {
+    width: 80%;
+  }
+}

@@ -673,6 +673,11 @@ nav ul li:hover > ul {
   max-width: inherit !important;
 }
 
+.ps {
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
 .p2 {
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
@@ -706,4 +711,17 @@ html {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 12px;
+}
+
+.tittle {
+  font-size: 2em;
+  text-align: center;
+}
+
+.about {
+  width: 100%;
+  text-align: center;
+}
+.about img {
+  width: 80%;
 }
