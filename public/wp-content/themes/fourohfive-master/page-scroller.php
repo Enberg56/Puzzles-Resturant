@@ -78,8 +78,65 @@ if( have_rows('menu_types') ):
 		<?php		
     endwhile;
 endif;
-// end parent loop-------------------
+// end parent loop-------------------///////////////////////////////
 ?>
+
+<?php
+// parent loop
+if( have_rows('menu_types') ):
+    while( have_rows('menu_types') ) : the_row();
+    	?>
+		<section>
+			<?php
+			// child loop
+			if( have_rows('lunch') ): ?>
+				<input id="tab-one" type="radio" name="grp" checked="checked"/>
+				<label for="tab-one">Tab One</label>
+			    <div class="divcont">
+			    <?php while( have_rows('lunch') ) : the_row(); ?>	
+					 <?php the_sub_field('lname'); ?>
+					 <?php the_sub_field('ldesctiption'); ?>
+					 <?php the_sub_field('lprice'); ?>
+					<br><br>
+				<?php endwhile; ?>
+				</div>	
+			<?php endif; // end first child loop ?>		
+				<?php 
+			// -----------------secound child loop
+			if( have_rows('dinner') ): ?>
+				<input id="tab-two" type="radio" name="grp" />
+				<label for="tab-two">Tab Two</label>
+			    <?php while( have_rows('dinner') ) : the_row(); ?>				
+					<div class="divcont">
+					<?php the_sub_field('diname'); ?>
+					 <?php the_sub_field('didesctiption'); ?>
+					 <?php the_sub_field('diprice'); ?>
+					 </div>
+					 <br><br>
+				<?php endwhile; ?>		
+			<?php endif; 
+			// --------------- end secound child loop ?>
+			<?php
+			// -----------------third child loop
+			if( have_rows('dessert') ): ?>
+					<input id="tab-three" type="radio" name="grp" />
+					<label for="tab-three">Tab Three</label>
+				    <?php while( have_rows('dessert') ) : the_row(); ?>				
+						<div class="divcont">
+						<?php the_sub_field('dename'); ?>
+						 <?php the_sub_field('dedesctiption'); ?>
+						 <?php the_sub_field('deprice'); ?>
+						 </div>
+					<?php endwhile; ?>
+			<?php endif;
+			// --------------- end third child loop	?>
+		</section>
+		<?php		
+    endwhile;
+endif;
+// end parent loop-------------------////////////////////////////
+?>
+
 
 <div class="p2 ps" id="about">
 	<h3 class="tittle">This is us</h3>
