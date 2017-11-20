@@ -10,79 +10,9 @@ get_header(); ?>
     echo do_shortcode("[metaslider id=79]");
 	?>
 </div>
-			<h3 class="mid tittle" id="menu-nav">Our menues</h3>
+			<h3 class="mid tittle" id="menu-nav">MENU</h3>
 <?php
-// parent loop
-if( have_rows('menu_types') ):
-    while( have_rows('menu_types') ) : the_row();
-    	?>
-		<nav class="main-navigation">
-			<?php
-			// child loop
-			if( have_rows('lunch') ): ?>
-				<ul class="menu">
-					<li class="menu-dropdown"><a href="#">Lunch</a>
-						<ul class="sub-menu">
-					    <?php while( have_rows('lunch') ) : the_row(); ?>				
-							<li><a href="#"><?php the_sub_field('lname'); ?>
-							 <?php the_sub_field('ldesctiption'); ?>
-							 <?php the_sub_field('lprice'); ?></a></li>			
-						<?php endwhile; ?>				
-						</ul>
-					</li>
-			<?php endif; // end first child loop ?>		
-				<?php 
-			// -----------------secound child loop
-			if( have_rows('dinner') ): ?>
-				<li class="menu-dropdown"><a href="#">Dinner</a>
-					<ul class="sub-menu">
-				    <?php while( have_rows('dinner') ) : the_row(); ?>				
-						<li><a href="#"><?php the_sub_field('diname'); ?>
-						 <?php the_sub_field('didesctiption'); ?>
-						 <?php the_sub_field('diprice'); ?></a></li>
-					<?php endwhile; ?>		
-					</ul>
-				</li>
-			<?php endif; 
-			// --------------- end secound child loop ?>
-			<?php
-			// -----------------third child loop
-			if( have_rows('dessert') ): ?>
-				<li class="menu-dropdown"><a href="#">Dessert</a>
-					<ul class="sub-menu">
-				    <?php while( have_rows('dessert') ) : the_row(); ?>				
-						<li><a href="#"><?php the_sub_field('dename'); ?>
-						 <?php the_sub_field('dedesctiption'); ?>
-						 <?php the_sub_field('deprice'); ?></a></li>
-					<?php endwhile; ?>
-					</ul>
-				</li>
-			<?php endif;
-			// --------------- end third child loop	?>
-						<?php
-			// -----------------fourth child loop
-			if( have_rows('drinks') ): ?>
-				<li class="menu-dropdown"><a href="#">Drinks</a>
-					<ul>
-				    <?php while( have_rows('drinks') ) : the_row(); ?>			
-						<li><a href="#"><?php the_sub_field('drname'); ?>
-						 <?php the_sub_field('drdesctiption'); ?>
-						 <?php the_sub_field('drprice'); ?></a></li>
-					<?php endwhile; ?>
-					</ul>
-				</li>
-			<?php endif;
-			// --------------- end fourth child loop	?>
-		</ul>
-		</nav>
-		<?php		
-    endwhile;
-endif;
-// end parent loop-------------------///////////////////////////////
-?>
-
-<?php
-// parent loop
+// start loop ----------------////////////
 if( have_rows('menu_types') ):
     while( have_rows('menu_types') ) : the_row();
     	?>
@@ -91,13 +21,13 @@ if( have_rows('menu_types') ):
 			// child loop
 			if( have_rows('lunch') ): ?>
 				<input id="tab-one" type="radio" name="grp" checked="checked"/>
-				<label for="tab-one">Tab One</label>
+				<label for="tab-one">Lunch</label>
 			    <div class="divcont">
 			    <?php while( have_rows('lunch') ) : the_row(); ?>	
-					 <?php the_sub_field('lname'); ?>
-					 <?php the_sub_field('ldesctiption'); ?>
-					 <?php the_sub_field('lprice'); ?>
-					<br><br>
+					 <h3><?php the_sub_field('lname'); ?></h3>
+					 <p><?php the_sub_field('ldesctiption'); ?></p>
+					 <p><?php the_sub_field('lprice'); ?>.-</p>
+					 <br>
 				<?php endwhile; ?>
 				</div>	
 			<?php endif; // end first child loop ?>		
@@ -105,13 +35,13 @@ if( have_rows('menu_types') ):
 			// -----------------secound child loop
 			if( have_rows('dinner') ): ?>
 				<input id="tab-two" type="radio" name="grp" />
-				<label for="tab-two">Tab Two</label>
+				<label for="tab-two">Dinner</label>
 				<div class="divcont">
 			    <?php while( have_rows('dinner') ) : the_row(); ?>
-					<?php the_sub_field('diname'); ?>
-					 <?php the_sub_field('didesctiption'); ?>
-					 <?php the_sub_field('diprice'); ?>
-					 <br><br>
+					<h3><?php the_sub_field('diname'); ?></h3>
+					 <p><?php the_sub_field('didesctiption'); ?></p>
+					 <p><?php the_sub_field('diprice'); ?>.-</p>
+					 <br>
 				<?php endwhile; ?>	
 				</div>	
 			<?php endif; 
@@ -120,13 +50,13 @@ if( have_rows('menu_types') ):
 			// -----------------third child loop
 			if( have_rows('dessert') ): ?>
 					<input id="tab-three" type="radio" name="grp" />
-					<label for="tab-three">Tab Three</label>
+					<label for="tab-three">Dessert</label>
 					<div class="divcont">				    
 				    <?php while( have_rows('dessert') ) : the_row(); ?>				
-						<?php the_sub_field('dename'); ?>
-						 <?php the_sub_field('dedesctiption'); ?>
-						 <?php the_sub_field('deprice'); ?>
-						 <br><br>
+						<h3><?php the_sub_field('dename'); ?></h3>
+						 <p><?php the_sub_field('dedesctiption'); ?></p>
+						 <p><?php the_sub_field('deprice'); ?>.-</p>
+						 <br> 
 					<?php endwhile; ?>
 					</div>
 			<?php endif;
@@ -135,12 +65,13 @@ if( have_rows('menu_types') ):
 			// -----------------fourth child loop
 			if( have_rows('drinks') ): ?>
 				<input id="tab-four" type="radio" name="grp" />
-				<label for="tab-four">four </label>
+				<label for="tab-four">The Bar</label>
 				<div class="divcont">				    
 				    <?php while( have_rows('drinks') ) : the_row(); ?>			
-						<?php the_sub_field('drname'); ?>
-						 <?php the_sub_field('drdesctiption'); ?>
-						 <?php the_sub_field('drprice'); ?>
+						<h3><?php the_sub_field('drname'); ?></h3>
+						 <p><?php the_sub_field('drdesctiption'); ?></p>
+						 <p><?php the_sub_field('drprice'); ?>.-</p>
+						 <br>
 					<?php endwhile; ?>
 				</div>
 			<?php endif; ?>
@@ -148,7 +79,7 @@ if( have_rows('menu_types') ):
 		<?php		
     endwhile;
 endif;
-// end parent loop-------------------////////////////////////////
+// end loop-------------------////////////////////////////
 ?>
 
 

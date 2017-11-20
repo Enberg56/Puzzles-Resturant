@@ -506,117 +506,38 @@ body, html {
     height: 3em;
   }
 }
-.main-navigation {
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  margin: 2em;
-  background: #555555;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-.menu {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-}
-.menu li {
-  display: block;
-  list-style-type: none;
-  text-transform: uppercase;
-}
-.menu li a {
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  padding: 1rem;
-}
-.menu li a:hover {
-  background: #222222;
-}
-
-@media (min-width: 800px) {
-  .menu {
-    -ms-flex-direction: row;
-        flex-direction: row;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-  }
-}
-nav ul ul {
-  display: none;
-}
-
-@media (min-width: 800px) {
-  nav ul ul {
-    display: none;
-    position: absolute;
-  }
-}
-nav ul li:hover > ul {
-  display: block;
-  color: #fff;
-  padding-left: 2rem;
-}
-
-@media (min-width: 800px) {
-  nav ul li:hover > ul {
-    padding-left: 0;
-    background: #777;
-  }
-
-  nav ul li:hover > ul a {
-    color: #fff;
-  }
-
-  .sub-menu li {
-    display: -ms-flexbox;
-    display: flex;
-    padding-right: 2em;
-  }
-  .sub-menu li:hover, .sub-menu li a:hover {
-    background: #ddd;
-    color: #777;
-  }
-
-  nav ul ul ul {
-    margin: 0 0 0 100%;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
-  }
-
-  .menu-dropdown .menu-dropdown > a:after {
-    content: '\f431';
-    padding: 1px;
-    -ms-transform: rotate(-90deg);
-        transform: rotate(-90deg);
-  }
-}
 section {
+  background: #555555;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 90%;
+  margin-left: 5%;
+  font-family: 'Spectral SC', serif;
+}
+section h3 {
+  font-size: 1.5em;
 }
 
 label {
-  background: #eee;
-  border: 1px solid #ddd;
-  padding: .7em 1em;
+  background: #555555;
+  color: #eeeeee;
+  padding: .7em 9%;
   cursor: pointer;
   z-index: 1;
   margin-left: -1px;
+  font-size: 18px;
 }
 label:first-of-type {
   margin-left: 0;
 }
 
 .divcont {
+  background: #eeeeee;
+  text-align: left;
   width: 100%;
   margin-top: -1px;
   padding: 1em;
@@ -630,7 +551,7 @@ input[type=radio], .divcont {
 }
 
 input[type=radio]:checked + label {
-  background: #fff;
+  background: #222222;
   border-bottom: 1px solid #fff;
 }
 
@@ -638,6 +559,13 @@ input[type=radio]:checked + label + .divcont {
   display: block;
 }
 
+@media (max-width: 885px) {
+  section {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    text-align: center;
+  }
+}
 /*-------here is stuff that came with the teame--------
 .global-nav ul ul {
     position: absolute;
