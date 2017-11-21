@@ -449,7 +449,7 @@ template {
 }
 
 body, html {
-  font-family: "Inconsolata", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 18px;
 }
 
@@ -522,16 +522,16 @@ section h3 {
   font-size: 1.5em;
 }
 
-label {
+.food-menu {
   background: #555555;
-  color: #eeeeee;
+  color: white;
   padding: .7em 9%;
   cursor: pointer;
   z-index: 1;
   margin-left: -1px;
   font-size: 18px;
 }
-label:first-of-type {
+.food-menu:first-of-type {
   margin-left: 0;
 }
 
@@ -550,12 +550,12 @@ input[type=radio], .divcont {
   display: none;
 }
 
-input[type=radio]:checked + label {
+input[type=radio]:checked + .food-menu {
   background: #222222;
   border-bottom: 1px solid #fff;
 }
 
-input[type=radio]:checked + label + .divcont {
+input[type=radio]:checked + .food-menu + .divcont {
   display: block;
 }
 

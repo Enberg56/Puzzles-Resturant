@@ -21,7 +21,7 @@ if( have_rows('menu_types') ):
 			// child loop
 			if( have_rows('lunch') ): ?>
 				<input id="tab-one" type="radio" name="grp" checked="checked"/>
-				<label for="tab-one">Lunch</label>
+				<label class="food-menu" for="tab-one">Lunch</label>
 			    <div class="divcont">
 			    <?php while( have_rows('lunch') ) : the_row(); ?>	
 					 <h3><?php the_sub_field('lname'); ?></h3>
@@ -35,7 +35,7 @@ if( have_rows('menu_types') ):
 			// -----------------secound child loop
 			if( have_rows('dinner') ): ?>
 				<input id="tab-two" type="radio" name="grp" />
-				<label for="tab-two">Dinner</label>
+				<label class="food-menu" for="tab-two">Dinner</label>
 				<div class="divcont">
 			    <?php while( have_rows('dinner') ) : the_row(); ?>
 					<h3><?php the_sub_field('diname'); ?></h3>
@@ -50,7 +50,7 @@ if( have_rows('menu_types') ):
 			// -----------------third child loop
 			if( have_rows('dessert') ): ?>
 					<input id="tab-three" type="radio" name="grp" />
-					<label for="tab-three">Dessert</label>
+					<label class="food-menu" for="tab-three">Dessert</label>
 					<div class="divcont">				    
 				    <?php while( have_rows('dessert') ) : the_row(); ?>				
 						<h3><?php the_sub_field('dename'); ?></h3>
@@ -65,7 +65,7 @@ if( have_rows('menu_types') ):
 			// -----------------fourth child loop
 			if( have_rows('drinks') ): ?>
 				<input id="tab-four" type="radio" name="grp" />
-				<label for="tab-four">The Bar</label>
+				<label class="food-menu" for="tab-four">The Bar</label>
 				<div class="divcont">				    
 				    <?php while( have_rows('drinks') ) : the_row(); ?>			
 						<h3><?php the_sub_field('drname'); ?></h3>
@@ -81,19 +81,6 @@ if( have_rows('menu_types') ):
 endif;
 // end loop-------------------////////////////////////////
 ?>
-
-
-<div class="p2 ps" id="about">
-	<h3 class="tittle">This is us</h3>
-	<div class="about">
-	<?php if( get_field('crew_pic') ): ?>
-
-	<img src="<?php the_field('crew_pic'); ?>" />
-
-<?php endif; ?>
-	</div>
-	<?php the_field('our_story') ?>
-</div>
 
 <div class="mid p4" id="resturants">
 	<?php
@@ -113,6 +100,21 @@ endif;
 	endwhile;
 	?>
 </div>
+<div>
+<?php gravity_form( 1, false, false, false, '', false ); ?>
+ </div>
+<div class="p2 ps" id="about">
+	<h3 class="tittle">This is us</h3>
+	<div class="about">
+	<?php if( get_field('crew_pic') ): ?>
+
+	<img src="<?php the_field('crew_pic'); ?>" />
+
+<?php endif; ?>
+	</div>
+	<?php the_field('our_story') ?>
+</div>
+
 </main>
 <?php
 get_footer();

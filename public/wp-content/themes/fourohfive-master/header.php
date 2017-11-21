@@ -13,9 +13,9 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 	<link href="https://fonts.googleapis.com/css?family=Spectral+SC:200,400" rel="stylesheet"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
 	<?php wp_head(); ?>
 </head>
 

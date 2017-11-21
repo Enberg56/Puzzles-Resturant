@@ -53,7 +53,7 @@ section {
   background: $gray;
   display: -webkit-flex;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around; 
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 90%;
@@ -63,9 +63,9 @@ section {
     font-size: 1.5em;
   }
 }
-label {
+.food-menu {
   background: $gray;
-  color: $gray-lighter;
+  color: white;
   padding: .7em 9%;
   cursor: pointer;
   z-index: 1;
@@ -91,11 +91,11 @@ input[type=radio], .divcont {
   display: none;
 }
 
-input[type=radio]:checked + label {
+input[type=radio]:checked + .food-menu {
   background: $gray-darker;
   border-bottom: 1px solid #fff;
 }
-input[type=radio]:checked + label + .divcont {
+input[type=radio]:checked + .food-menu + .divcont {
   display: block;
 }
 @media (max-width: 885px){
