@@ -99,10 +99,20 @@ endif;
 
 	endwhile;
 	?>
-</div>
+</div class="mid">
+  <input class="formi" id="toggle" type="checkbox" checked>
+  <label class="forml" for="toggle">Reserve a Table</label>
+  <div id="expand">
+    <section class="mid">
+		<?php gravity_form( 1, false, false, false, '', false ); ?>
+    </section>
+  </div>
+
+
 <div>
-<?php gravity_form( 1, false, false, false, '', false ); ?>
+
  </div>
+ 
 <div class="p2 ps" id="about">
 	<h3 class="tittle">This is us</h3>
 	<div class="about">

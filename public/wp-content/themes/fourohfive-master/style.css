@@ -694,3 +694,37 @@ html {
 .about img {
   width: 80%;
 }
+
+.formi {
+  display: none;
+  visibility: hidden;
+}
+
+.forml {
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+  font-size: 3em;
+  border-bottom: 1px solid #CCC;
+  background: #555555;
+  margin: 10px 10%;
+  box-shadow: 10px 10px 5px #888888;
+  color: #222222;
+}
+
+.fomrl:hover {
+  color: black;
+  cursor: pointer;
+}
+
+#expand {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  color: #FFF;
+  margin: 1em;
+}
+
+#toggle:checked ~ #expand {
+  height: 100%;
+}
