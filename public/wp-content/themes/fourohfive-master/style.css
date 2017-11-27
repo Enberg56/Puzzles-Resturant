@@ -566,45 +566,6 @@ input[type=radio]:checked + .food-menu + .divcont {
     text-align: center;
   }
 }
-/*-------here is stuff that came with the teame--------
-.global-nav ul ul {
-    position: absolute;
-        top: 100%;
-        left: -999em;
-        z-index: 99999;
-}
-
-.global-nav ul ul ul {
-    top: 0;
-    left: -999em;
-}
-
-.global-nav ul ul li:hover > ul,
-.global-nav ul ul li.focus > ul {
-    left: 100%;
-}
-
-.global-nav ul ul a {
-    width: 200px;
-}
-
-.global-nav ul li:hover > ul,
-.global-nav ul li.focus > ul {
-    left: auto;
-}
-
-.global-nav a {
-    padding: $spacer-15x-y $spacer-x;
-    color: white;
-    border: 1px solid $gray-dark;
-} 
-
-.global-nav a {
-    text-decoration: none;
-    padding: 15px;
-    margin: 0px 30px;
-}
-*/
 /* Small menu. */
 .menu-toggle,
 .global-nav.toggled ul {
@@ -712,8 +673,8 @@ html {
   color: #222222;
 }
 .forml:hover {
-  color: black;
   cursor: pointer;
+  background: #6f6f6f;
 }
 
 #expand {

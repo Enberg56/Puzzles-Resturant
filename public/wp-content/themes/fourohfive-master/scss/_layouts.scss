@@ -36,6 +36,8 @@ html {
   display: none;
   visibility: hidden;
 }
+
+// fillform & button
 .forml {
   display: block;
   padding: 0.5em;
@@ -47,8 +49,8 @@ html {
   box-shadow: 10px 10px 5px #888888;
   color: $gray-darker;
     &:hover {
-      color: black;
       cursor: pointer;
+      background: lighten($gray , 10%);
     }
   }
 #expand {
