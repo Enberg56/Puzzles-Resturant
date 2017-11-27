@@ -10,4 +10,4 @@ CREATE TABLE `wp_rg_form_view` (
   PRIMARY KEY (`id`),
   KEY `date_created` (`date_created`),
   KEY `form_id` (`form_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;

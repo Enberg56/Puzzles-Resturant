@@ -711,8 +711,7 @@ html {
   box-shadow: 10px 10px 5px #888888;
   color: #222222;
 }
-
-.fomrl:hover {
+.forml:hover {
   color: black;
   cursor: pointer;
 }

@@ -46,11 +46,11 @@ html {
   margin: 10px 10%;
   box-shadow: 10px 10px 5px #888888;
   color: $gray-darker;
-}
-.fomrl:hover {
-  color: black;
-  cursor: pointer;
-}
+    &:hover {
+      color: black;
+      cursor: pointer;
+    }
+  }
 #expand {
   height: 0px;
   overflow: hidden;
